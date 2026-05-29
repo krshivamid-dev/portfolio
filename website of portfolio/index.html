@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -13,12 +14,10 @@
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-
-  <!-- Tailwind -->
-  <script src="https://cdn-tailwindcss.vercel.app/"></script>
 
 </head>
 
@@ -26,23 +25,29 @@
 
   <!-- HEADER -->
 
-  <header class="header">
+  <header>
 
     <div class="logo">
-      <a class="homenav" href="#">Shivam.</a>
+      <a href="#">Shivam.</a>
     </div>
 
     <nav>
+
       <a href="#home">Home</a>
+
       <a href="#about">About</a>
+
       <a href="#skills">Skills</a>
+
       <a href="#projects">Projects</a>
+
       <a href="#contact">Contact</a>
+
     </nav>
 
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
 
   <section class="hero" id="home">
 
@@ -53,19 +58,20 @@
       <h1>Shivam Yadav</h1>
 
       <p>
-        Frontend Web Developer and Programmer passionate about creating
-        beautiful, responsive, and professional websites using HTML,
-        CSS, and JavaScript.
+        Frontend Web Developer and Programmer passionate about
+        creating responsive and professional websites.
       </p>
 
-      <div class="hero-btn">
-        <a href="#projects" class="btn">View Projects</a>
-      </div>
+      <a href="#projects" class="btn">
+        View Projects
+      </a>
 
     </div>
 
     <div class="hero-image">
+
       <img src="image.jpeg" alt="Profile">
+
     </div>
 
   </section>
@@ -74,13 +80,16 @@
 
   <section class="about" id="about">
 
-    <h2 class="section-title">About Me</h2>
+    <h2 class="section-title">
+      About Me
+    </h2>
 
     <div class="about-content">
 
       <p>
         I am a passionate web developer focused on creating modern,
-        responsive, and user-friendly websites.
+        responsive and user-friendly websites using HTML, CSS,
+        JavaScript and modern technologies.
       </p>
 
     </div>
@@ -91,13 +100,18 @@
 
   <section id="skills">
 
-    <h2 class="section-title">My Skills</h2>
+    <h2 class="section-title">
+      My Skills
+    </h2>
 
     <div class="skills-container">
 
       <div class="skill">HTML</div>
+
       <div class="skill">CSS</div>
+
       <div class="skill">JavaScript</div>
+
       <div class="skill">Frontend Development</div>
 
     </div>
@@ -108,7 +122,9 @@
 
   <section class="projects" id="projects">
 
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">
+      Projects
+    </h2>
 
     <div class="project-container">
 
@@ -173,7 +189,7 @@
           <h3>Music Playlist Web Page</h3>
 
           <p>
-            Interactive music playlist web page with animations.
+            Interactive music playlist page with animations.
           </p>
 
           <a href="https://github.com/" target="_blank">
@@ -194,72 +210,111 @@
 
     <div class="contact-box">
 
-      <div class="text-center">
-        <h1 class="contact-title">Contact Us</h1>
+      <h2 class="contact-title">
+        Contact Me
+      </h2>
 
-        <p class="contact-subtitle">
-          Fill up the form below to send a message.
-        </p>
-      </div>
+      <p class="contact-subtitle">
+        Fill the form below to send a message.
+      </p>
 
-      <form action="https://api.web3forms.com/submit" method="POST">
+      <form
+        id="form"
+        action="https://api.web3forms.com/submit"
+        method="POST">
 
-        <input type="hidden" name="access_key"
-          value="961f3f57-572f-41df-9d28-1bec75e6f6c0" />
+        <!-- WEB3FORMS -->
 
-        <input type="hidden" name="subject"
-          value="New Submission from Web3Forms" />
+        <input
+          type="hidden"
+          name="access_key"
+          value="961f3f57-572f-41df-9d28-1bec75e6f6c0">
 
-        <input type="checkbox" name="botcheck"
+        <input
+          type="hidden"
+          name="subject"
+          value="New Portfolio Message">
+
+        <input
+          type="checkbox"
+          name="botcheck"
           style="display:none;">
 
+        <!-- NAME -->
+
         <div class="input-group">
+
           <label>Full Name</label>
 
-          <input type="text"
+          <input
+            type="text"
             name="name"
-            placeholder="John Doe"
+            placeholder="Enter your name"
             required>
+
         </div>
 
+        <!-- EMAIL -->
+
         <div class="input-group">
+
           <label>Email Address</label>
 
-          <input type="email"
+          <input
+            type="email"
             name="email"
-            placeholder="you@example.com"
+            placeholder="Enter your email"
             required>
+
         </div>
 
+        <!-- PHONE -->
+
         <div class="input-group">
+
           <label>Phone Number</label>
 
-          <input type="text"
+          <input
+            type="text"
             name="phone"
             placeholder="+91 9876543210"
             required>
+
         </div>
+
+        <!-- MESSAGE -->
 
         <div class="input-group">
+
           <label>Your Message</label>
 
-          <textarea rows="5"
+          <textarea
+            rows="5"
             name="message"
-            placeholder="Your Message"
+            placeholder="Write your message..."
             required></textarea>
+
         </div>
 
+        <!-- BUTTON -->
+
         <button type="submit" class="submit-btn">
+
           Send Message
+
         </button>
-<p id="result"></p>
+
+        <!-- RESULT -->
+
+        <p id="result"></p>
+
       </form>
 
     </div>
 
   </section>
 
-  <!-- SOCIAL LINKS -->
+  <!-- SOCIAL -->
 
   <div class="social-links">
 
@@ -278,14 +333,16 @@
   <footer>
 
     <p>
-      © 2026 Shivam Yadav | kr.shivam.id@gmail.com
+      © 2026 Shivam Yadav |
+      kr.shivam.id@gmail.com
     </p>
 
   </footer>
+
+  <!-- JS -->
 
   <script src="main.js"></script>
 
 </body>
 
 </html>
-
